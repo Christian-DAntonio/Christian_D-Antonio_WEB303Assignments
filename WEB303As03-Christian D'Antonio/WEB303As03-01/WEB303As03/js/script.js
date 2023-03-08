@@ -8,29 +8,32 @@
     })
 })} */
 
+function loadJson()
+{
+    $.ajax({
+        type: "GET",
+        url: "team.json",
+        dataType: "json",
+        success: function(data)
+        {
+            let msg ="";
+            $.each(data.team, function(key, val){
+                msg = '<h1>' + val.name `</h1>`;
+                msg = '<h1>' + val.position `</h1>`;
+                msg = '<h1>' + val.bio `</h1>`;
+            });
+            $(`#team`).html(msg);
+        },
+        error: function() {
+            console.log("Error occurred")
+        }
+    });
+}
+
 $(document).ready(function (){
     $(`#team`).html(`<p>Loading</p>`);
-    function loadJson()
-    {
-        $.ajax({
-            type: "GET",
-            url: "team.json",
-            dataType: "json",
-            success: function(data)
-            {
-                let msg ="";
-                $.each(data.team, function(key, val){
-                    msg = '<h1>' + val.name `</h1>`;
-                    msg = '<h1>' + val.position `</h1>`;
-                    msg = '<h1>' + val.bio `</h1>`;
-                });
-                $(`#team`).html(msg);
-            },
-            error: function() {
-                console.log("Error occurred")
-            }
-        });
-    }
+    
+    loadJson();
 });
 
 
