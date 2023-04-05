@@ -1,0 +1,44 @@
+ [
+    {
+        "fname": "Gordan",
+        "lname": "Ramsay",
+        "age": 56,
+        "job": "Chief",
+        "role": "Fixing the restauraunt"
+    },
+    {
+        "fname": "Joe",
+        "lname": "Nagy",
+        "age": "Unknown",
+        "job": "Restauraunt owner",
+        "role": "Running the restauraunt"
+    },
+    {
+        "fname": "Tom",
+        "lname": "Unknown",
+        "age": "Unknown",
+        "job": "Head Chief",
+        "role": "Cooking the food"
+    },
+    {
+        "fname": "Amy",
+        "lname": "Unknown",
+        "age": "Unknown",
+        "job": "Server",
+        "role": "Serves the food"
+    },
+    {
+        "fname": "Jen",
+        "lname": "Unknown",
+        "age": "Unknown",
+        "job": "Server",
+        "role": "Serves the food"
+    },
+    {
+        "fname": "Rebecca",
+        "lname": "Unknown",
+        "age": "Unknown",
+        "job": "Server",
+        "role": "Serves the food"
+    }
+]
